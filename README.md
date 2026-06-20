@@ -1,24 +1,25 @@
-# Product Support Triage Sample: GitHub Integration Sync Issue
+# Product Support Triage Sample
 
 **Author:** Chien Escalera Duong  
-**Type:** Public-safe support craft sample for recruiters  
-**Scenario:** GitHub integration connected, but pull request status is not updating on related work items
+**Type:** Public, synthetic support sample — safe for recruiters
+
+This is a public, synthetic support sample showing how I would organize an integration issue from customer report to internal escalation. It is **not** from a real customer or employer.
 
 ---
 
 ## What this is
 
-A realistic, fictional support case showing how I approach an integration troubleshooting ticket at a dev-tool company. The scenario is based on a common pattern — partial sync, unclear root cause — not on any real customer or employer.
+A fictional but realistic support case: a dev team connected GitHub to their project-management workspace, but pull request status is not updating on related work items. The repo contains the full triage workflow — customer replies, investigation notes, escalation handoff, and a documentation improvement proposal.
 
-This is a **practice sample**, not live production support work. It demonstrates my thinking process, not years of SaaS product support tenure.
+Everything here is **synthetic sample work** designed to show my support craft without exposing private materials.
 
 ---
 
-## Why it exists
+## Why it matters
 
-I am building toward product support roles at developer-focused companies. Recruiters and hiring managers often ask: *Can this person triage technical user issues, communicate clearly, and feed useful signal back to the team?*
+Recruiters and hiring managers often ask: *Can this person triage technical user issues, communicate clearly, and feed useful signal back to the team?*
 
-This artifact answers that question with concrete examples — customer replies, internal notes, and documentation suggestions — without exposing private application materials or claiming experience I do not have.
+This artifact answers that with concrete examples — not claims about years of SaaS tenure.
 
 ---
 
@@ -31,7 +32,7 @@ This artifact answers that question with concrete examples — customer replies,
 | Engineering handoff quality | [internal-escalation-note.md](./internal-escalation-note.md) |
 | Reducing repeat tickets through docs | [documentation-improvement-note.md](./documentation-improvement-note.md) |
 
-Core operating habits shown:
+Core habits shown:
 
 - Restate the user's problem before troubleshooting
 - Gather minimum evidence before escalating
@@ -41,35 +42,80 @@ Core operating habits shown:
 
 ---
 
-## File index
+## Recruiter quick scan
 
-| File | Purpose |
-|------|---------|
-| [support-case-github-sync.md](./support-case-github-sync.md) | Full case write-up — triage, checklist, severity, escalation criteria |
-| [customer-reply.md](./customer-reply.md) | Draft customer-facing replies (initial, follow-up, bug vs config paths) |
-| [internal-escalation-note.md](./internal-escalation-note.md) | Internal note for engineering or senior support review |
-| [documentation-improvement-note.md](./documentation-improvement-note.md) | Help-center and onboarding improvement proposal |
+This project demonstrates:
+
+- Customer issue triage from first report to escalation
+- Clear, calm customer-facing communication
+- Structured reproduction and root-cause thinking
+- Internal escalation notes an engineer can act on
+- Documentation improvement proposals to reduce repeat tickets
+- Safe, synthetic sample work — no real customer data
+
+**Start here:** [support-case-github-sync.md](./support-case-github-sync.md) → then [customer-reply.md](./customer-reply.md)
 
 ---
 
-## What I would improve with real product context
+## Demo / walkthrough
 
-This sample uses a generic project-management platform for software teams. With access to a real product, I would:
+Read the files in this order for the full story:
 
-- Verify exact integration settings names, UI paths, and error messages
-- Confirm webhook delivery logs and sync timing expectations
-- Check whether the product surfaces silent failures or only shows success states
-- Align escalation templates with the team's actual severity rubric
-- Link internal notes to the company's ticket or issue tracker format
-- Validate documentation suggestions against existing help-center gaps
+1. **[support-case-github-sync.md](./support-case-github-sync.md)** — Full case write-up: triage checklist, severity, escalation criteria
+2. **[customer-reply.md](./customer-reply.md)** — Draft customer replies (initial, follow-up, bug vs config paths)
+3. **[internal-escalation-note.md](./internal-escalation-note.md)** — Internal note for engineering or senior support
+4. **[documentation-improvement-note.md](./documentation-improvement-note.md)** — Help-center and onboarding improvement proposal
 
-I learn product context quickly. My strength is structured communication, user empathy, and disciplined triage — not pretending to already know every integration edge case.
+No install required — this is a documentation-based sample.
+
+---
+
+## How to run locally
+
+Not applicable — this repo is markdown artifacts only. Clone and read:
+
+```bash
+git clone https://github.com/heyitschien/product-support-triage-sample.git
+cd product-support-triage-sample
+```
+
+For deeper context, see [docs/recruiter-notes.md](./docs/recruiter-notes.md).
+
+---
+
+## Screenshots / video
+
+### Screenshots
+
+See [docs/screenshots/](./docs/screenshots/) — placeholders for future workflow diagrams.
+
+### Walkthrough video
+
+Coming soon: short walkthrough by Chien explaining:
+
+1. What problem this solves
+2. How the workflow works
+3. What decisions were made
+4. How this connects to product support / technical support work
+
+---
+
+## Notes on privacy / scope
+
+| In scope (public) | Out of scope (private or not claimed) |
+|-------------------|---------------------------------------|
+| Synthetic customer scenario | Real customer names, tickets, or employer data |
+| Sample replies and internal notes | Production support tenure claims |
+| Triage methodology and templates | Private Career OS or hunt strategy |
+| Documentation improvement ideas | Access to a real product's admin tools |
+
+**Safe to share** with recruiters, pin on GitHub, or link from LinkedIn Featured.
 
 ---
 
 ## Related public work
 
-- **Developer workflow walkthrough (YouTube):** https://www.youtube.com/watch?v=osexel8sixc — plain-English explanation of a technical migration, showing documentation and adoption thinking
+- **Developer workflow walkthrough (YouTube):** [Supabase to Neon migration](https://www.youtube.com/watch?v=osexel8sixc) — plain-English technical explanation showing documentation and adoption thinking
 
 ---
 
@@ -77,13 +123,3 @@ I learn product context quickly. My strength is structured communication, user e
 
 - **GitHub:** https://github.com/heyitschien
 - **LinkedIn:** https://www.linkedin.com/in/chien-escalera-duong-4ba535347/
-
----
-
-## Usage note
-
-Safe to share with recruiters, pin on GitHub, or link from LinkedIn Featured. No employer data, customer PII, or private hunt strategy included.
-
-**Public repo target (after review):** https://github.com/heyitschien/product-support-triage-sample ✅ **Live**
-
-**Sync script:** `scripts/sync_product_support_triage_sample.sh` — republish after edits in this folder
