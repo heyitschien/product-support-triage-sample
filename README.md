@@ -84,4 +84,6 @@ I learn product context quickly. My strength is structured communication, user e
 
 Safe to share with recruiters, pin on GitHub, or link from LinkedIn Featured. No employer data, customer PII, or private hunt strategy included.
 
-**Public repo target (after review):** `heyitschien/product-support-triage-sample`
+**Public repo target (after review):** https://github.com/heyitschien/product-support-triage-sample ✅ **Live**
+
+**Sync script:** `scripts/sync_product_support_triage_sample.sh` — republish after edits in this folder
