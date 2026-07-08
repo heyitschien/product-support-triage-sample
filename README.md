@@ -131,4 +131,4 @@ See [docs/screenshots/](./docs/screenshots/) and [docs/triage-flow-diagram.md](.
 ## Contact
 
 - **GitHub:** https://github.com/heyitschien
-- **LinkedIn:** https://www.linkedin.com/in/chien-escalera-duong-4ba535347/
+- **LinkedIn:** https://www.linkedin.com/in/heyitschien/
