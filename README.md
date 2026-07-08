@@ -13,6 +13,24 @@ A fictional but realistic support case: a dev team connected GitHub to their pro
 
 Everything here is **synthetic sample work** designed to show my support craft without exposing private materials.
 
+**Employer proof (start here):**
+
+- [IMPLEMENTATION-SPECIALIST-MAPPING.md](./IMPLEMENTATION-SPECIALIST-MAPPING.md) — posting responsibility → proof file → demonstration
+- [docs/triage-flow-diagram.md](./docs/triage-flow-diagram.md) — Mermaid triage flowchart
+- **10-minute reading path** — diagram → case → customer reply → escalation note
+
+---
+
+## Employer relevance
+
+| Target role | Strongest proof in this repo |
+| --- | --- |
+| Implementation Specialist | Configuration validation, reproduction steps, resolution paths |
+| Onboarding Specialist | Clarifying questions, user education, documentation improvement |
+| Product Support Specialist | Full triage loop, customer replies, escalation criteria |
+| Technical Support Specialist | Layer map, integration troubleshooting, internal escalation note |
+| Customer Operations Specialist | Ticket ownership, status communication, knowledge-base signal |
+
 ---
 
 ## Why it matters
@@ -83,20 +101,11 @@ For deeper context, see [docs/recruiter-notes.md](./docs/recruiter-notes.md).
 
 ---
 
-## Screenshots / video
+## Screenshots
 
-### Screenshots
+See [docs/screenshots/](./docs/screenshots/) and [docs/triage-flow-diagram.md](./docs/triage-flow-diagram.md) for the visual triage flow.
 
-See [docs/screenshots/](./docs/screenshots/) — placeholders for future workflow diagrams.
-
-### Walkthrough video
-
-Coming soon: short walkthrough by Chien explaining:
-
-1. What problem this solves
-2. How the workflow works
-3. What decisions were made
-4. How this connects to product support / technical support work
+**10-minute reading path:** [IMPLEMENTATION-SPECIALIST-MAPPING.md](./IMPLEMENTATION-SPECIALIST-MAPPING.md) → [support-case-github-sync.md](./support-case-github-sync.md) → [customer-reply.md](./customer-reply.md) → [internal-escalation-note.md](./internal-escalation-note.md)
 
 ---
 
