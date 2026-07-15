@@ -19,7 +19,7 @@ This table maps common posting responsibilities for Product Support, Technical S
 
 ---
 
-## Employer relevance by role
+## Best-aligned roles
 
 | Target role | Fit | Strongest proof in this repo |
 | --- | :---: | --- |
@@ -30,7 +30,6 @@ This table maps common posting responsibilities for Product Support, Technical S
 | Junior Implementation Specialist | Strong | Configuration validation, reproduction steps, resolution paths A/B/C |
 | Customer Success Specialist | Moderate | Status communication and prevention loop |
 | Support Engineer | Moderate | Evidence packet + escalation handoff (log/API depth is illustrative) |
-| Senior Implementation / Solutions Engineer | Weak | Not the primary target for this artifact |
 
 ---
 

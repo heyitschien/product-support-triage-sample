@@ -30,7 +30,7 @@ Everything here is **synthetic sample work** designed to show my support craft w
 
 ---
 
-## Employer relevance
+## Best-aligned roles
 
 | Target role | Fit |
 | --- | :---: |
@@ -41,7 +41,6 @@ Everything here is **synthetic sample work** designed to show my support craft w
 | Junior Implementation Specialist | Strong |
 | Customer Success Specialist | Moderate |
 | Support Engineer | Moderate |
-| Senior Implementation / Solutions Engineer | Weak |
 
 Full responsibility → proof map: [ROLE-MAPPING.md](./ROLE-MAPPING.md)
 
@@ -127,4 +126,4 @@ For deeper context, see [docs/recruiter-notes.md](./docs/recruiter-notes.md).
 ## Contact
 
 - **GitHub:** https://github.com/heyitschien
-- **LinkedIn:** https://www.linkedin.com/in/heyitschien/
+- **LinkedIn:** https://www.linkedin.com/in/chien-escalera-duong/
