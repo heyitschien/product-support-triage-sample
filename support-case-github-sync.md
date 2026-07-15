@@ -40,7 +40,7 @@ Send with first reply:
 2. Which GitHub organization did you authorize — company org or a personal account?
 3. Which repository(s) are affected? Is this all repos or only some?
 4. Can you share one example work item ID and one example PR URL?
-5. Did OAuth complete without error? (Screenshot of integration settings is helpful.)
+5. Did OAuth complete without error? (A redacted screenshot of integration settings is helpful — please remove tokens, secrets, and unrelated customer data.)
 6. Is this a first-time setup, or did sync work before and stop?
 7. Have there been recent changes to GitHub org permissions, repo access, or team membership?
 
@@ -71,16 +71,18 @@ User expectation → workspace/team → integration settings → OAuth scope →
 
 Use when configuration appears correct or before engineering escalation:
 
-1. Log into workspace as admin (or with user's permission)
+1. Use an internal test workspace or approved support impersonation tooling according to company policy. Never request or use the customer’s password or private credentials.
 2. Open Settings → Integrations → GitHub
 3. Record: connected account name, org vs personal, repo allowlist, team mapping
 4. Open example work item from customer report
 5. Open example PR from customer report
 6. Verify PR references work item ID in expected format
 7. Create or identify a small test PR in the affected repo with correct reference
-8. Wait for documented sync interval (note actual wait time)
+8. Wait one documented sync interval, then check whether the PR status appears on the linked work item (note actual wait time from product docs / policy)
 9. Compare expected vs actual on work item view
 10. If reconnect fixes issue, document exact steps for customer and internal note
+
+**Screenshot hygiene (customer asks):** Please redact access tokens, secrets, private repository information, or unrelated customer data before sending the screenshot.
 
 **Expected behavior:** When GitHub is connected with correct org/repo scope and PRs reference work items properly, PR status updates appear on the linked work item within the product's normal sync window.
 
@@ -108,8 +110,8 @@ Use when configuration appears correct or before engineering escalation:
 | **User impact** | Medium-high — team blocked on migration workflow |
 | **Workaround available?** | Possibly manual linking; not sustainable for eng team |
 | **Scope** | Unknown until repo/org scope confirmed — could be one repo or workspace-wide |
-| **Suggested priority** | P2 — respond same business day; escalate within 24h if repro confirmed and config ruled out |
-| **SLA note** | Treat migration-week customers as higher urgency even if technical severity is medium |
+| **Illustrative priority** | Medium-high under a hypothetical support rubric — respond same business day; escalate within about one business day if repro confirmed and config ruled out |
+| **SLA note** | In production, use the company’s severity definitions and SLA policy. Treat migration-week customers as higher urgency even if technical severity is medium. |
 
 ---
 

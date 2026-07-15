@@ -1,0 +1,28 @@
+{
+  "_comment": "FICTIONAL sample only — illustrates silent mismatch when personal account lacks org repo access",
+  "delivery_id": "evt_sample_actual_001",
+  "event": "installation",
+  "action": "created",
+  "installation": {
+    "account_type": "User",
+    "account_login": "alex-dev-personal-sample",
+    "repository_selection": "selected",
+    "repositories": ["alex-dev-personal-sample/sandbox"]
+  },
+  "integration_ui": {
+    "connected": true,
+    "error_surface": null,
+    "note": "UI shows Connected even though company repo acme-corp-sample/api is not in authorized scope"
+  },
+  "customer_reported_prs": [
+    {
+      "html_url": "https://github.com/acme-corp-sample/api/pull/840",
+      "work_item_id": "ENG-140",
+      "observed_on_work_item": false
+    }
+  ],
+  "sync": {
+    "status": "no_matching_installation_for_target_repo",
+    "actual_result": "Partial commit linking elsewhere; PR status missing on linked work items"
+  }
+}

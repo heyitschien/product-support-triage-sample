@@ -34,8 +34,10 @@ Customer reports GitHub integration is connected but PR status does not consiste
 6. Example work item: `[e.g., ENG-142]`
 7. Example PR: `[PR URL]`
 8. Confirm PR references work item ID in title/body/branch per product convention
-9. Observe work item view after one sync interval (~15 min documented; confirm actual SLA)
+9. Observe work item view after one documented sync interval (confirm timing from product docs / company SLA policy — do not invent a fixed minute count)
 10. **Result:** PR status does not update; some commit activity may appear inconsistently
+
+**Access policy:** Use an internal test workspace or approved support impersonation tooling. Never request or use the customer’s password or private credentials.
 
 **Alternative repro (support test):** Reconnect with correct org → merge test PR → if still fails, bug likely.
 
@@ -130,7 +132,7 @@ When GitHub integration is configured with:
 ## Support commitment to customer
 
 - Will not close ticket until resolved or workaround confirmed
-- Will provide update within one business day while engineering investigates
+- Will provide updates on the cadence required by the company’s SLA / severity policy (illustrative sample: within one business day while engineering investigates)
 - Will not ask customer to repeat information already captured in this note
 
 ---

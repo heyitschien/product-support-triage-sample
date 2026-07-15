@@ -38,5 +38,8 @@ User expectation → workspace/team → integration settings → OAuth scope
 | Evidence + config + reproduce | [support-case-github-sync.md](../support-case-github-sync.md) — Investigation + reproduction |
 | Escalate | [internal-escalation-note.md](../internal-escalation-note.md) |
 | Document prevention | [documentation-improvement-note.md](../documentation-improvement-note.md) |
+| Completed outcome | [CASE-OUTCOME.md](../CASE-OUTCOME.md) |
 
-See also: [IMPLEMENTATION-SPECIALIST-MAPPING.md](../IMPLEMENTATION-SPECIALIST-MAPPING.md)
+Rendered PNG: [screenshots/triage-flow.png](./screenshots/triage-flow.png)
+
+See also: [ROLE-MAPPING.md](../ROLE-MAPPING.md)

@@ -1,0 +1,14 @@
+# FICTIONAL sync-job excerpt — not production logs
+# Redact tokens/secrets in real tickets. Never paste live credentials.
+
+2026-06-19T16:55:01Z INFO  sync.job started workspace=ws_sample_001 integration=github
+2026-06-19T16:55:01Z INFO  sync.auth account_type=User login=alex-dev-personal-sample
+2026-06-19T16:55:02Z WARN  sync.scope target_repo=acme-corp-sample/api accessible=false
+2026-06-19T16:55:02Z INFO  sync.ui_state connected=true error_surface=none
+2026-06-19T16:55:03Z INFO  sync.job finished matched_prs=0 skipped_out_of_scope=3
+
+2026-06-19T17:02:11Z INFO  sync.job started workspace=ws_sample_001 integration=github
+2026-06-19T17:02:11Z INFO  sync.auth account_type=Organization login=acme-corp-sample
+2026-06-19T17:02:12Z INFO  sync.scope target_repo=acme-corp-sample/api accessible=true
+2026-06-19T17:02:14Z INFO  sync.match pr=842 work_item=ENG-142 via=pr_title
+2026-06-19T17:02:15Z INFO  sync.job finished matched_prs=1 skipped_out_of_scope=0

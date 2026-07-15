@@ -1,35 +1,49 @@
 # Product Support Triage Sample
 
+![Product Support Triage Sample](./docs/screenshots/social-preview.png)
+
 **Author:** Chien Escalera Duong  
 **Type:** Public, synthetic support sample — safe for recruiters
 
-This is a public, synthetic support sample showing how I would organize an integration issue from customer report to internal escalation. It is **not** from a real customer or employer.
+This is a public, synthetic support sample showing how I would organize an integration issue from customer report to verified resolution (and, when needed, internal escalation). It is **not** from a real customer or employer.
+
+---
+
+## Recruiter quick path — 5 minutes
+
+1. **[CASE-OUTCOME.md](./CASE-OUTCOME.md)** — the full story in one page
+2. **[customer-reply.md](./customer-reply.md)** — customer communication
+3. **[internal-escalation-note.md](./internal-escalation-note.md)** — engineering handoff
+4. **[documentation-improvement-note.md](./documentation-improvement-note.md)** — prevention loop
+
+Hiring managers who want depth: open [support-case-github-sync.md](./support-case-github-sync.md) after the quick path.
+
+Role fit: [ROLE-MAPPING.md](./ROLE-MAPPING.md) · Visual flow: [docs/triage-flow-diagram.md](./docs/triage-flow-diagram.md)
 
 ---
 
 ## What this is
 
-A fictional but realistic support case: a dev team connected GitHub to their project-management workspace, but pull request status is not updating on related work items. The repo contains the full triage workflow — customer replies, investigation notes, escalation handoff, and a documentation improvement proposal.
+A fictional but realistic support case: a dev team connected GitHub to their project-management workspace, but pull request status is not updating on related work items. The repo contains the full triage workflow — customer replies, investigation notes, a completed outcome, escalation handoff, and a documentation improvement proposal.
 
 Everything here is **synthetic sample work** designed to show my support craft without exposing private materials.
-
-**Employer proof (start here):**
-
-- [IMPLEMENTATION-SPECIALIST-MAPPING.md](./IMPLEMENTATION-SPECIALIST-MAPPING.md) — posting responsibility → proof file → demonstration
-- [docs/triage-flow-diagram.md](./docs/triage-flow-diagram.md) — Mermaid triage flowchart
-- **10-minute reading path** — diagram → case → customer reply → escalation note
 
 ---
 
 ## Employer relevance
 
-| Target role | Strongest proof in this repo |
-| --- | --- |
-| Implementation Specialist | Configuration validation, reproduction steps, resolution paths |
-| Onboarding Specialist | Clarifying questions, user education, documentation improvement |
-| Product Support Specialist | Full triage loop, customer replies, escalation criteria |
-| Technical Support Specialist | Layer map, integration troubleshooting, internal escalation note |
-| Customer Operations Specialist | Ticket ownership, status communication, knowledge-base signal |
+| Target role | Fit |
+| --- | :---: |
+| Product Support Specialist | Excellent |
+| Technical Support Specialist | Excellent |
+| Customer Operations Specialist | Strong |
+| Onboarding Specialist | Strong |
+| Junior Implementation Specialist | Strong |
+| Customer Success Specialist | Moderate |
+| Support Engineer | Moderate |
+| Senior Implementation / Solutions Engineer | Weak |
+
+Full responsibility → proof map: [ROLE-MAPPING.md](./ROLE-MAPPING.md)
 
 ---
 
@@ -45,46 +59,35 @@ This artifact answers that with concrete examples — not claims about years of 
 
 | Skill | Where to see it |
 |-------|-----------------|
+| Completed ownership loop | [CASE-OUTCOME.md](./CASE-OUTCOME.md) |
 | Calm first response + clarifying questions | [customer-reply.md](./customer-reply.md) |
 | Structured investigation and triage | [support-case-github-sync.md](./support-case-github-sync.md) |
 | Engineering handoff quality | [internal-escalation-note.md](./internal-escalation-note.md) |
 | Reducing repeat tickets through docs | [documentation-improvement-note.md](./documentation-improvement-note.md) |
+| Log / webhook-style investigation depth | [evidence/](./evidence/) |
 
 Core habits shown:
 
 - Restate the user's problem before troubleshooting
 - Gather minimum evidence before escalating
 - Separate configuration issues from potential product bugs
+- Use approved support access methods — never customer passwords
 - Write for both the customer and the internal team
 - Turn one ticket into a documentation improvement when patterns repeat
 
 ---
 
-## Recruiter quick scan
+## Screenshots and visuals
 
-This project demonstrates:
+| Asset | File |
+| --- | --- |
+| Social / LinkedIn preview (1200×630) | [docs/screenshots/social-preview.png](./docs/screenshots/social-preview.png) |
+| Triage operating loop | [docs/screenshots/triage-flow.png](./docs/screenshots/triage-flow.png) |
+| Annotated case excerpt | [docs/screenshots/annotated-case-excerpt.png](./docs/screenshots/annotated-case-excerpt.png) |
 
-- Customer issue triage from first report to escalation
-- Clear, calm customer-facing communication
-- Structured reproduction and root-cause thinking
-- Internal escalation notes an engineer can act on
-- Documentation improvement proposals to reduce repeat tickets
-- Safe, synthetic sample work — no real customer data
+Mermaid source: [docs/triage-flow-diagram.md](./docs/triage-flow-diagram.md)
 
-**Start here:** [support-case-github-sync.md](./support-case-github-sync.md) → then [customer-reply.md](./customer-reply.md)
-
----
-
-## Demo / walkthrough
-
-Read the files in this order for the full story:
-
-1. **[support-case-github-sync.md](./support-case-github-sync.md)** — Full case write-up: triage checklist, severity, escalation criteria
-2. **[customer-reply.md](./customer-reply.md)** — Draft customer replies (initial, follow-up, bug vs config paths)
-3. **[internal-escalation-note.md](./internal-escalation-note.md)** — Internal note for engineering or senior support
-4. **[documentation-improvement-note.md](./documentation-improvement-note.md)** — Help-center and onboarding improvement proposal
-
-No install required — this is a documentation-based sample.
+Set `docs/screenshots/social-preview.png` as the GitHub repository social preview (Settings → General → Social preview).
 
 ---
 
@@ -101,14 +104,6 @@ For deeper context, see [docs/recruiter-notes.md](./docs/recruiter-notes.md).
 
 ---
 
-## Screenshots
-
-See [docs/screenshots/](./docs/screenshots/) and [docs/triage-flow-diagram.md](./docs/triage-flow-diagram.md) for the visual triage flow.
-
-**10-minute reading path:** [IMPLEMENTATION-SPECIALIST-MAPPING.md](./IMPLEMENTATION-SPECIALIST-MAPPING.md) → [support-case-github-sync.md](./support-case-github-sync.md) → [customer-reply.md](./customer-reply.md) → [internal-escalation-note.md](./internal-escalation-note.md)
-
----
-
 ## Notes on privacy / scope
 
 | In scope (public) | Out of scope (private or not claimed) |
@@ -116,6 +111,7 @@ See [docs/screenshots/](./docs/screenshots/) and [docs/triage-flow-diagram.md](.
 | Synthetic customer scenario | Real customer names, tickets, or employer data |
 | Sample replies and internal notes | Production support tenure claims |
 | Triage methodology and templates | Private Career OS or hunt strategy |
+| Synthetic evidence packet | Real webhook / production logs |
 | Documentation improvement ideas | Access to a real product's admin tools |
 
 **Safe to share** with recruiters, pin on GitHub, or link from LinkedIn Featured.

@@ -133,6 +133,8 @@ Common underlying causes are **configuration**, not product defects:
 
 ## Related files in this sample
 
+- Case outcome: [CASE-OUTCOME.md](./CASE-OUTCOME.md)
 - Full case: [support-case-github-sync.md](./support-case-github-sync.md)
 - Customer replies: [customer-reply.md](./customer-reply.md)
 - Escalation template: [internal-escalation-note.md](./internal-escalation-note.md)
+- Synthetic evidence packet: [evidence/](./evidence/)

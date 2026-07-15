@@ -26,7 +26,7 @@ To troubleshoot efficiently, could you confirm:
 4. One example work item ID and one example PR URL?
 5. Whether this is first-time setup or something that worked before?
 
-If you can include a screenshot of your integration settings page (Integration → GitHub), that helps me see how the connection is configured without you needing to guess.
+If you can include a screenshot of your integration settings page (Integration → GitHub), that helps me see how the connection is configured without you needing to guess. Please redact access tokens, secrets, private repository information, or unrelated customer data before sending the screenshot.
 
 Once I have that, I will tell you whether this looks like a setup fix we can do together or something I should reproduce and escalate to our engineering team.
 
@@ -57,7 +57,7 @@ Your integration shows as connected, but GitHub was authorized with a **personal
 4. Confirm the affected repository is included in the allowlist
 5. Merge a small test PR that references a work item ID in the title or description
 
-Give it about 15 minutes, then check whether status updates on the linked work item.
+Wait one documented sync interval, then check whether the PR status appears on the linked work item.
 
 If that does not work, reply with a fresh screenshot of the integration page and the test PR link — I will escalate with full reproduction notes so you do not have to repeat yourself.
 
@@ -82,7 +82,7 @@ From the example PR you shared, it looks like the pull request may not be refere
 
 1. Create a small test PR
 2. Include the work item ID in the title, for example: `ENG-142 Fix login redirect`
-3. Wait one sync cycle and check the work item for PR status
+3. Wait one documented sync interval and check the work item for PR status
 
 Here is a short guide on linking conventions: [link to help article if available]
 

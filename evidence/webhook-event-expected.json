@@ -1,0 +1,30 @@
+{
+  "_comment": "FICTIONAL sample only — not from a real GitHub org or customer workspace",
+  "delivery_id": "evt_sample_expected_001",
+  "event": "pull_request",
+  "action": "opened",
+  "installation": {
+    "account_type": "Organization",
+    "account_login": "acme-corp-sample",
+    "repository_selection": "selected",
+    "repositories": ["acme-corp-sample/api"]
+  },
+  "pull_request": {
+    "number": 842,
+    "html_url": "https://github.com/acme-corp-sample/api/pull/842",
+    "title": "ENG-142 Fix login redirect",
+    "head_ref": "eng-142-login-redirect",
+    "base_ref": "main",
+    "merged": false
+  },
+  "workspace_mapping": {
+    "workspace_id": "ws_sample_001",
+    "team": "Engineering",
+    "work_item_id": "ENG-142",
+    "link_matched_via": "pr_title"
+  },
+  "sync": {
+    "status": "queued",
+    "expected_result": "PR status attached to work item ENG-142 after one documented sync interval"
+  }
+}
