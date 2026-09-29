@@ -12,7 +12,7 @@ This table maps common posting responsibilities for Product Support, Technical S
 | **Status updates** | [customer-reply.md](./customer-reply.md) | Calm customer-facing updates that restate the problem, set expectations, and avoid overpromising |
 | **Configuration validation** | [support-case-github-sync.md](./support-case-github-sync.md) | OAuth scope, repo allowlist, team mapping, and reference-format checks before calling it a bug |
 | **QA mindset** | [support-case-github-sync.md](./support-case-github-sync.md) · [CASE-OUTCOME.md](./CASE-OUTCOME.md) | Test PR workflow, expected vs actual behavior, and isolation of config vs product failure |
-| **Escalation** | [internal-escalation-note.md](./internal-escalation-note.md) | Escalation only after minimum evidence; clear repro, impact, and what support already ruled out |
+| **Escalation** | [internal-escalation-note.md](./internal-escalation-note.md) · [CASE-OUTCOME.md](./CASE-OUTCOME.md) | Path A closes without engineering; Path C is the handoff if a controlled test still fails. Security, outage, or severity policy can escalate sooner |
 | **Handoff documentation** | [internal-escalation-note.md](./internal-escalation-note.md) | Engineer-ready note so the next owner does not restart the investigation |
 | **Knowledge-base improvement** | [documentation-improvement-note.md](./documentation-improvement-note.md) | Turns one ticket pattern into help-center and onboarding improvements |
 | **SLA mindset** | [support-case-github-sync.md](./support-case-github-sync.md) | Illustrative priority framing and migration-week urgency without inventing a product’s real SLA policy |

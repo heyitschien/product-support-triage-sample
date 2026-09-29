@@ -2,13 +2,21 @@
 
 **Template for:** Engineering · Senior Support · Product triage  
 **Case ID:** SAMPLE-001 (fictional)  
-**Author:** Chien Escalera Duong (support craft sample — not live employer ticket)
+**Author:** Chien Escalera Duong (support craft sample — not a live employer ticket)
+
+**Status:** This file is the **conditional handoff template for Path C**.
+
+The completed Path A outcome in [CASE-OUTCOME.md](./CASE-OUTCOME.md) did **not** require engineering escalation. The configuration fix resolved the issue, and the controlled test passed.
+
+Use this note only if scope and configuration are verified and a controlled test still fails, or if security, an outage, or severity policy requires an immediate handoff.
+
+Fields below are a template. Unchecked items are not already-verified facts.
 
 ---
 
 ## Summary
 
-Customer reports GitHub integration is connected but PR status does not consistently update on linked work items. Partial commit linking may work. Customer is migrating from a legacy issue tracker and is release-adjacent. Configuration troubleshooting in progress or exhausted — requesting engineering review if reproduction confirms.
+Sample customer reports the GitHub integration is connected, but PR status does not consistently update on linked work items. Partial commit linking may work. The sample customer is migrating from a legacy issue tracker and is release-adjacent. Fill this note when configuration troubleshooting is exhausted, or when policy says to escalate before that.
 
 ---
 
@@ -16,11 +24,11 @@ Customer reports GitHub integration is connected but PR status does not consiste
 
 | Field | Detail |
 |-------|--------|
-| **Account type** | Small startup, ~12 engineers |
-| **Workflow blocked?** | Yes — team relies on PR ↔ work item visibility for release tracking |
-| **Migration context** | First month on platform; high sensitivity to "silent failure" |
+| **Account type** | Small startup, ~12 engineers (sample) |
+| **Workflow blocked?** | Yes, in the sample — the team relies on PR ↔ work item visibility for release tracking |
+| **Migration context** | First month on the platform; high sensitivity to a connection that looks healthy and does not sync |
 | **Channels used** | Email (initial) |
-| **Business urgency** | Medium-high — customer cited upcoming release cycle |
+| **Business urgency** | Sample customer cited an upcoming release cycle. Score the real case with the company's severity policy |
 
 ---
 
@@ -29,78 +37,86 @@ Customer reports GitHub integration is connected but PR status does not consiste
 1. Workspace: `[customer workspace — redacted in public sample]`
 2. Team: Engineering (default team mapping)
 3. Integration: GitHub — shows **Connected**
-4. Authorized identity: `[org or personal handle — confirm with customer]`
+4. Authorization/install scope: `[confirm whether the required organization and repository are included]`
 5. Affected repo: `[repo name — e.g., acme-corp/api]`
 6. Example work item: `[e.g., ENG-142]`
 7. Example PR: `[PR URL]`
-8. Confirm PR references work item ID in title/body/branch per product convention
-9. Observe work item view after one documented sync interval (confirm timing from product docs / company SLA policy — do not invent a fixed minute count)
-10. **Result:** PR status does not update; some commit activity may appear inconsistently
+8. Confirm the PR references the work item ID in the title, body, or branch per the product's convention
+9. Observe the work item view after one documented sync interval (confirm timing from product docs or company policy — do not invent a fixed minute count)
+10. **Result to record:** PR status does not update; some commit activity may appear inconsistently
 
 **Access policy:** Use an internal test workspace or approved support impersonation tooling. Never request or use the customer’s password or private credentials.
 
-**Alternative repro (support test):** Reconnect with correct org → merge test PR → if still fails, bug likely.
+**Alternative check (support test):** Correct the install scope so the required organization and repository are included, then merge a test PR. If it still fails, a product defect is more likely.
 
 ---
 
 ## Expected behavior
 
-When GitHub integration is configured with:
+When the GitHub integration is configured with:
 
-- Correct organization authorized
-- Target repository in allowlist
+- Authorization/install scope that includes the required organization and repository
+- Target repository in the allowlist
 - Valid team mapping
-- PR referencing work item ID in supported format
+- A PR that references the work item ID in a supported format
 
 → PR status and activity should appear on the linked work item within the product's documented sync window.
 
 ---
 
-## Actual behavior
+## Actual behavior to capture
 
-- Integration UI shows successful connection
+Record what was observed. Do not treat this list as already proven:
+
+- Integration UI shows a successful connection
 - Customer reports inconsistent or missing PR status updates
 - Possible partial commit linking
-- No clear in-product error message surfaced to customer
-- Customer unable to distinguish setup issue vs product defect without support guidance
+- No clear in-product error message surfaced to the customer
+- Customer cannot tell a setup issue from a product defect without support guidance
 
 ---
 
 ## Environment / context
 
+Fill from the real ticket. Sample placeholders only:
+
 | Field | Value |
 |-------|-------|
-| Customer browser | Chrome (reported) |
-| Customer OS | macOS (reported) |
-| Support verification | Settings review via customer screenshot |
-| First-time setup? | Yes — migration week |
-| Regression? | N/A — new customer |
-| Other integrations | Unknown |
+| Customer browser | `[reported browser]` |
+| Customer OS | `[reported OS]` |
+| Support verification | `[settings review via customer screenshot, if provided]` |
+| First-time setup? | `[yes / no]` |
+| Regression? | `[yes / no / unknown]` |
+| Other integrations | `[unknown until asked]` |
 
 ---
 
-## Evidence collected
+## Evidence checklist
 
-- [ ] Customer email with symptom description
+Check only what was actually collected:
+
+- [ ] Customer email with the symptom description
 - [ ] Screenshot of Integration → GitHub settings
 - [ ] Example work item ID
 - [ ] Example PR URL
-- [ ] Confirmation of GitHub org vs personal authorization
+- [ ] Confirmation that the authorization/install scope does or does not include the required organization and repository
 - [ ] Repo allowlist configuration
-- [ ] Result of test PR after guided reconnect (if attempted)
-- [ ] Timestamp of last sync attempt / wait duration observed
+- [ ] Result of a test PR after the scope was corrected (if attempted)
+- [ ] Timestamp of the last sync attempt / wait duration observed
 
-**Minimum evidence before escalation:** At least settings screenshot + example issue + example PR + config steps attempted.
+**Minimum evidence before a routine escalation:** settings screenshot, example work item, example PR, and the configuration steps already attempted.
+
+**Exception:** escalate immediately when a real security issue, an outage, or the company's severity policy requires it. Do not wait for this checklist in those cases.
 
 ---
 
 ## Current hypothesis
 
-**Primary (configuration):** GitHub authorized with personal account lacking org repo access — sync appears connected but has no valid scope. Support can resolve without engineering if reconnect fixes.
+**Primary (configuration):** The authorization/install scope lacks access to the required organization or repository. The UI can show connected while that scope is missing. Support can resolve without engineering if correcting the scope fixes the test.
 
-**Secondary (product):** Silent failure when authorized scope is empty or repo not in allowlist — UI shows success without surfacing actionable error. Product improvement candidate.
+**Secondary (product):** Silent failure when the authorized scope is empty or the repo is not in the allowlist — the UI shows success without an actionable error. Product improvement candidate, not a measured finding.
 
-**Tertiary (bug):** Webhook delivery or sync job failure despite correct configuration — requires engineering logs if repro confirmed after config fix.
+**Tertiary (bug):** Delivery or sync-job failure despite correct configuration. This needs engineering logs if the failure still reproduces after the scope is corrected.
 
 ---
 
@@ -108,22 +124,22 @@ When GitHub integration is configured with:
 
 | If… | Route to… |
 |-----|-----------|
-| Config fix resolves | Support closes — no escalation |
-| Config verified, repro persists | **Integrations engineering** or on-call for GitHub sync |
-| Multiple customers, same pattern | **Product** + docs — misleading connected state |
-| Docs gap only | **Documentation** — see [documentation-improvement-note.md](./documentation-improvement-note.md) |
+| Config fix resolves | Support closes — no escalation. This is the Path A ending in [CASE-OUTCOME.md](./CASE-OUTCOME.md) |
+| Config verified, repro persists | **Integrations engineering** or on-call for the sync path |
+| Security, outage, or severity policy requires it | Escalate immediately on the team's on-call path |
+| Same pattern needs a docs fix | **Documentation** — see [documentation-improvement-note.md](./documentation-improvement-note.md) |
 
 ---
 
 ## Related documentation / product feedback
 
-**Docs gap:** No prominent "connected but not syncing" article for migration users.
+**Docs gap in this sample:** No prominent "connected but not syncing" article for someone setting this up during a migration.
 
-**Product feedback signals:**
+**Product feedback signals to validate, not claimed as measured:**
 
-1. Success state shown when sync cannot function (wrong OAuth scope)
-2. No guided validation step after OAuth ("test your first PR")
-3. Users migrating from legacy tools expect PR status in familiar location — possible UX discoverability issue
+1. A success state can appear when the install scope cannot reach the required repository
+2. There may be no guided validation step after authorization ("test your first PR")
+3. People migrating from another tool may look for PR status in a familiar place and miss it
 
 **Suggested ticket labels:** `integration` · `github` · `support-escalation` · `voice-of-customer`
 
@@ -131,12 +147,12 @@ When GitHub integration is configured with:
 
 ## Support commitment to customer
 
-- Will not close ticket until resolved or workaround confirmed
-- Will provide updates on the cadence required by the company’s SLA / severity policy (illustrative sample: within one business day while engineering investigates)
-- Will not ask customer to repeat information already captured in this note
+- Will not close the ticket until it is resolved or a workaround is confirmed
+- Will update the customer on the cadence required by the company's SLA and severity policy
+- Will not ask the customer to repeat information already captured in this note
 
 ---
 
 ## Author note
 
-This is a **public-safe sample** demonstrating escalation discipline. In live support I would attach real (non-public) workspace identifiers and follow the team's actual escalation template.
+This is a **public-safe sample** demonstrating escalation discipline. In live support I would attach real (non-public) workspace identifiers and follow the team's actual escalation template. Nothing in this file is a real production log, webhook, or SLA.

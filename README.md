@@ -68,11 +68,11 @@ This artifact answers that with concrete examples — not claims about years of 
 Core habits shown:
 
 - Restate the user's problem before troubleshooting
-- Gather minimum evidence before escalating
+- Gather minimum evidence before a routine escalation; escalate immediately for security, an outage, or severity policy
 - Separate configuration issues from potential product bugs
 - Use approved support access methods — never customer passwords
 - Write for both the customer and the internal team
-- Turn one ticket into a documentation improvement when patterns repeat
+- Turn one ticket into a documentation proposal when the same confusion is worth checking for a repeat pattern
 
 ---
 
@@ -82,7 +82,7 @@ Core habits shown:
 | --- | --- |
 | Social / LinkedIn preview (1200×630) | [docs/screenshots/social-preview.png](./docs/screenshots/social-preview.png) |
 | Triage operating loop | [docs/screenshots/triage-flow.png](./docs/screenshots/triage-flow.png) |
-| Annotated case excerpt | [docs/screenshots/annotated-case-excerpt.png](./docs/screenshots/annotated-case-excerpt.png) |
+| Annotated case excerpt (older visual; 18% line is not measured) | [docs/screenshots/annotated-case-excerpt.png](./docs/screenshots/annotated-case-excerpt.png) |
 
 Mermaid source: [docs/triage-flow-diagram.md](./docs/triage-flow-diagram.md)
 

@@ -1,5 +1,7 @@
 # FICTIONAL sync-job excerpt — not production logs
 # Redact tokens/secrets in real tickets. Never paste live credentials.
+# account_type below is an illustrative payload field for this sample's missing-scope story.
+# It is not a claim that every GitHub integration fails as personal-versus-organization.
 
 2026-06-19T16:55:01Z INFO  sync.job started workspace=ws_sample_001 integration=github
 2026-06-19T16:55:01Z INFO  sync.auth account_type=User login=alex-dev-personal-sample

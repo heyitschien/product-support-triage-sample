@@ -4,7 +4,7 @@
 
 This is my strongest public proof point for **product support** and **technical support** roles. It shows how I would handle a realistic integration troubleshooting ticket at a dev-tool company — from the first customer email through verified resolution, and (when needed) internal escalation and documentation follow-up.
 
-The scenario (GitHub integration, partial sync, unclear root cause) is a common pattern. The value is in *how* the work is organized, not in pretending I handled this exact ticket at a real company.
+The scenario (GitHub integration, partial sync, unclear root cause) is a realistic example for this sample. The value is in *how* the work is organized, not in pretending I handled this exact ticket at a real company.
 
 ## What to look at first
 
@@ -33,5 +33,5 @@ Optional log/API-style depth: [evidence/](../evidence/)
 - **First-response philosophy:** Acknowledge urgency, restate the problem, ask focused questions, set expectations before escalating.
 - **Config vs bug:** How I narrow the problem space before involving engineering.
 - **Security judgment:** Approved impersonation / test workspace only — never ask for customer passwords; redact secrets in screenshots.
-- **Documentation loop:** How one ticket can become a help-center improvement to reduce repeat volume.
+- **Documentation loop:** How one ticket can become a help-center improvement if a repeat pattern is later validated.
 - **What I'd do with real product access:** Verify exact settings names, webhook logs, sync timing, and align with the team's severity rubric.
