@@ -1,5 +1,5 @@
 {
-  "_comment": "FICTIONAL sample only — illustrates silent mismatch when personal account lacks org repo access",
+  "_comment": "FICTIONAL sample only — one illustration of an install whose scope misses the required org/repo. Not a claim about every GitHub integration.",
   "delivery_id": "evt_sample_actual_001",
   "event": "installation",
   "action": "created",

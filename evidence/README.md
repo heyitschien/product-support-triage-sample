@@ -3,7 +3,7 @@
 **Purpose:** Extra technical depth for Product Support Engineer / developer-support interview discussions.  
 **Important:** All payloads, logs, and identifiers below are **fictional**. They do not come from a real customer, employer, or production system.
 
-For the completed business outcome of this sample, see [../CASE-OUTCOME.md](../CASE-OUTCOME.md).
+For the completed business outcome of this GitHub integration sample, see [../GITHUB-INTEGRATION-CASE-OUTCOME.md](../GITHUB-INTEGRATION-CASE-OUTCOME.md).
 
 ---
 
@@ -12,7 +12,7 @@ For the completed business outcome of this sample, see [../CASE-OUTCOME.md](../C
 | File | What it shows |
 | --- | --- |
 | [webhook-event-expected.json](./webhook-event-expected.json) | Example GitHub webhook-style event when sync should succeed |
-| [webhook-event-actual.json](./webhook-event-actual.json) | Example event / delivery gap when authorization scope is wrong |
+| [webhook-event-actual.json](./webhook-event-actual.json) | Example event when this sample's install scope misses the required org/repo |
 | [expected-vs-actual.md](./expected-vs-actual.md) | Side-by-side comparison recruiters can scan quickly |
 | [test-timeline.md](./test-timeline.md) | Timestamped support verification sequence |
 | [sync-log-excerpt.txt](./sync-log-excerpt.txt) | Mock sync-job log lines (synthetic) |

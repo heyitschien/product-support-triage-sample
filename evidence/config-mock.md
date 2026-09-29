@@ -1,6 +1,8 @@
 # Mock Configuration Screenshot (Text)
 
-Synthetic stand-in for an annotated settings screenshot. In production, attach a redacted UI capture instead.
+Synthetic stand-in for an annotated settings screenshot. In a real ticket, attach a redacted UI capture instead.
+
+This before/after is **one illustration** of missing authorization scope in SAMPLE-001. It is not a claim that every GitHub integration chooses a personal account versus an organization, and it is not a real settings screen.
 
 ## Before fix
 
