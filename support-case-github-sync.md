@@ -123,7 +123,7 @@ These are checks for this synthetic case, not a claim about how often each cause
 
 ### Path A — Configuration
 
-In this sample, the authorization/install scope does not include the required organization or repository. Support guides a reconnect or allowlist update, then verifies with a test PR. Close when the customer can repeat the workflow. This is the ending recorded in [CASE-OUTCOME.md](./CASE-OUTCOME.md).
+In this sample, the authorization/install scope does not include the required organization or repository. Support guides a reconnect or allowlist update, then verifies with a test PR. Close when the customer can repeat the workflow. This is the ending recorded in [GITHUB-INTEGRATION-CASE-OUTCOME.md](./GITHUB-INTEGRATION-CASE-OUTCOME.md).
 
 ### Path B — Reference format / user education
 

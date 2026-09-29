@@ -6,7 +6,7 @@
 
 **Status:** This file is the **conditional handoff template for Path C**.
 
-The completed Path A outcome in [CASE-OUTCOME.md](./CASE-OUTCOME.md) did **not** require engineering escalation. The configuration fix resolved the issue, and the controlled test passed.
+The completed Path A outcome in [GITHUB-INTEGRATION-CASE-OUTCOME.md](./GITHUB-INTEGRATION-CASE-OUTCOME.md) did **not** require engineering escalation. The configuration fix resolved the issue, and the controlled test passed.
 
 Use this note only if scope and configuration are verified and a controlled test still fails, or if security, an outage, or severity policy requires an immediate handoff.
 
@@ -124,7 +124,7 @@ Check only what was actually collected:
 
 | If… | Route to… |
 |-----|-----------|
-| Config fix resolves | Support closes — no escalation. This is the Path A ending in [CASE-OUTCOME.md](./CASE-OUTCOME.md) |
+| Config fix resolves | Support closes — no escalation. This is the Path A ending in [GITHUB-INTEGRATION-CASE-OUTCOME.md](./GITHUB-INTEGRATION-CASE-OUTCOME.md) |
 | Config verified, repro persists | **Integrations engineering** or on-call for the sync path |
 | Security, outage, or severity policy requires it | Escalate immediately on the team's on-call path |
 | Same pattern needs a docs fix | **Documentation** — see [documentation-improvement-note.md](./documentation-improvement-note.md) |

@@ -3,7 +3,7 @@
 **Purpose:** Extra technical depth for Product Support Engineer / developer-support interview discussions.  
 **Important:** All payloads, logs, and identifiers below are **fictional**. They do not come from a real customer, employer, or production system.
 
-For the completed business outcome of this sample, see [../CASE-OUTCOME.md](../CASE-OUTCOME.md).
+For the completed business outcome of this GitHub integration sample, see [../GITHUB-INTEGRATION-CASE-OUTCOME.md](../GITHUB-INTEGRATION-CASE-OUTCOME.md).
 
 ---
 

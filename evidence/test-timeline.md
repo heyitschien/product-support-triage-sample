@@ -12,4 +12,4 @@ Timezone: Pacific (illustrative). All times and IDs are fictional.
 | 10:02–? | Waited **one documented sync interval** (product policy; not a fixed invented minute count) | — |
 | After interval | Checked work item `ENG-142` | PR status present |
 | Next touch | Simulated resolved-case reply; customer asked to retry the workflow | Simulated outcome: customer can repeat the workflow |
-| Close | Documented root cause + docs improvement signal | See CASE-OUTCOME.md |
+| Close | Documented root cause + docs improvement signal | See GITHUB-INTEGRATION-CASE-OUTCOME.md |

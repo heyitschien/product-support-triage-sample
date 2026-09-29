@@ -2,7 +2,9 @@
 
 ## What this project demonstrates
 
-This is my strongest public proof point for **product support** and **technical support** roles. It shows how I would handle a realistic integration troubleshooting ticket at a dev-tool company — from the first customer email through verified resolution, and (when needed) internal escalation and documentation follow-up.
+This file explains the **separate GitHub integration case** for product-support and technical-support roles. The junior IT support / Outlook example is [CASE-OUTCOME.md](../CASE-OUTCOME.md); it is not part of the GitHub story below.
+
+The GitHub case shows how I would handle a realistic integration troubleshooting ticket at a dev-tool company — from the first customer email through verified resolution, and (when needed) internal escalation and documentation follow-up.
 
 The scenario (GitHub integration, partial sync, unclear root cause) is a realistic example for this sample. The value is in *how* the work is organized, not in pretending I handled this exact ticket at a real company.
 
@@ -10,7 +12,7 @@ The scenario (GitHub integration, partial sync, unclear root cause) is a realist
 
 **Recruiter quick path — 5 minutes**
 
-1. **[CASE-OUTCOME.md](../CASE-OUTCOME.md)** — Completed story: root cause, actions, verification, prevention
+1. **[GITHUB-INTEGRATION-CASE-OUTCOME.md](../GITHUB-INTEGRATION-CASE-OUTCOME.md)** — Completed GitHub story: root cause, actions, verification, prevention
 2. **[customer-reply.md](../customer-reply.md)** — Empathy, clarity, next steps without overpromising
 3. **[internal-escalation-note.md](../internal-escalation-note.md)** — Engineer-ready handoff: repro, environment, minimum evidence
 4. **[documentation-improvement-note.md](../documentation-improvement-note.md)** — How one ticket becomes a help-center improvement
